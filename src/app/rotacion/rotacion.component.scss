@@ -1,0 +1,98 @@
+body{
+  margin: 0%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(207.8deg, #44f110 4.69%, #60aab7 100%);
+  margin: 0%;
+}
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.bordesito{
+
+  border: 3.5px solid #000000;
+  border-radius: 10px;
+  display: flex;
+
+}
+.inventario h1{
+  margin-right: 30px;
+}
+.himagen img{
+  width: 100px;
+  height: 80px;
+}
+header .titulo h1{
+  margin: 0%;
+  padding-left: 5px;
+}
+header .titulo p{
+  margin: 0%;
+  padding-top: 5px;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+}
+.barrita{
+  display: flex;
+  align-items: center;
+}
+.imagen4{
+  padding-top:15px ;
+  padding-right:  10px; ;
+  width: 18px;
+  height: 18px;
+}
+/* AQUI EMPEZAMOS CON EL SECTION */
+.section1{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(207.8deg, #8672ee 4.69%, #3df38f 100%);
+}
+.nametec{
+  display: flex;
+}
+.nametecnico{
+  margin-right: 50px;
+}
+.cuerpo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151vh;
+  height: 70vh;
+  background: linear-gradient(207.8deg, #bbe8eb 4.69%, #1df50a 100%);
+}
+.cuerpo div{
+  border-radius: 3px;
+  border: 1px solid #c6c6c6;
+  box-shadow: 3px 4px 4px rgb(12, 8, 8);
+  width: 90%;
+  height: 80%;
+  background-color: #85e6ed;
+}
+button{
+  height: 50px;
+  width: 140px;
+  background-color: yellow;
+  border-color: white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 3px 6px 6px rgb(7, 7, 7);
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(207.8deg, #89ec79 4.69%, #abd7e9 100%);
+  width: 100%;
+  height: 86px;
+  align-items: center;
+}

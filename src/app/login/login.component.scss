@@ -1,0 +1,171 @@
+html{
+  background: linear-gradient(207.8deg, #44f110 4.69%, #60aab7 100%);
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 70vh;
+}
+header{
+  display: flex;
+  justify-content: flex-start;
+  background: transparent;
+  margin: 0;
+}
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.bordesito{
+  margin-right: 700px;
+  border: 3.5px solid #000000;
+  background: yellow;
+  border-radius: 10px;
+  display: flex;
+
+}
+.himagen img{
+  width: 100px;
+  height: 80px;
+}
+header .titulo h1{
+  margin: 0%;
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Times New Roman";
+}
+header .titulo p{
+  margin: 0%;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: small;
+  font-family: "Times New Roman";
+}
+
+
+
+#Principal{
+  justify-content: space-around;
+  display: flex;
+  color: white;
+}
+
+#Iniciarsesion{
+  width: 320px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 40px;
+  margin-bottom: 50px;
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+label{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+#info {
+  margin: 2px;
+  padding-top: 20px;
+}
+
+#copy{
+  padding-top: 20px;
+}
+
+#imagenLogo {
+  width: 600px;
+  Height: 600px;
+}
+
+#imagenLogo img{
+  width: 600px;
+  Height: 500px;
+}
+
+#siguenos{
+  padding-top: 20px;
+}
+
+.redes {
+  width: 40px;
+  Height: 40px;
+}
+
+footer{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 18vh;
+}
+
+#referencias{
+  display: flex;
+  justify-content: space-around;
+}
+
+#Iniciarsesion input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#Iniciarsesion input[type="usuario"], #Iniciarsesion input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#Iniciarsesion input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#Iniciarsesion input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+#Iniciarsesion a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+#Iniciarsesion a:hover {
+  color: #fff;
+}
