@@ -31,7 +31,6 @@ import {registroUsuarioReducer} from "../reductor";
     RouterModule,
     HttpClientModule,
     FormsModule,
-    StoreModule.forRoot({registroUsuario :registroUsuarioReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

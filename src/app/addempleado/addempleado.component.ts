@@ -6,7 +6,8 @@ import {CargaScriptsService} from "../../cargaScripts";
 import {ApiService} from "../../apiService";
 import {Router} from "@angular/router";
 import {Store, select} from "@ngrx/store";
-import * as action from '../action';
+
+/* import * as action from '../action'; */
 
 @Component({
   selector: 'app-inventario',
@@ -21,25 +22,27 @@ export class AddempleadoComponent implements OnInit {
   correo: String = '';
   numero_doc: String = '';
 
-  form?: FormGroup;
-  usuarioregistro?: RegistroUsuario;
-  usuario?: Usuario;
+  mensaje: string = '';
 
-  registroUsuario$: Observable<any>;
-  registroUsuario: RegistroUsuario;
-
-
-  constructor(private cargaScripts: CargaScriptsService, private api: ApiService, private router: Router, private storeSesion: Store<{registroUsuario:any}>) {
-    cargaScripts.cargaStyles(["adminlte.min", "all.min", "icheck-bootstrap.min"]);
+  constructor(private api: ApiService, private router: Router) {
   }
 
   ngOnInit(): void {
+
+  }
+
+  registrar(): void{
     const usuario: RegistroUsuario = {
-      apellido: '',
-      nombre: '',
-      num_doc_ident: '',
-      correo: '',
-      contrasenia: ''
+      nombres: this.nombre,
+      apellidos: this.apellido,
+      num_doc_ident: this.numero_doc,
+      correo: this.correo,
+      contrasenia: this.contrasena
     }
+
+    this.api.registrarUsuario(usuario).subscribe(respuesta => {
+      this.mensaje = "usuario Creado";
+    })
+
   }
 }

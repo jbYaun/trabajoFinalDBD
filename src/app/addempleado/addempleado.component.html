@@ -30,13 +30,14 @@
 </section> -->
 <section>
   <div>
-    <input type="text" placeholder="Nombres">
-    <input type="text" placeholder="Apellidos">
-    <input type="text" placeholder="Correo">
-    <input type="number" placeholder="DNI">
-    <input type="password" placeholder="Contrasena">
+    <input id="nombre" type="text" placeholder="Nombres" name="nombre" [(ngModel)]="nombre">
+    <input id="apellido" type="text" placeholder="Apellidos" name="apellido" [(ngModel)]="apellido">
+    <input id="correo" type="text" placeholder="Correo" name="correo" [(ngModel)]="correo">
+    <input id="numero_doc" type="number" placeholder="DNI" name="numero_doc" [(ngModel)]="numero_doc">
+    <input id="contrasena" type="password" placeholder="Contrasena" name="contrasena" [(ngModel)]="contrasena">
     <input type="password" placeholder="Confirmar Contrasena">
-    <button>REGISTRAR</button>
+    <button (click)="registrar()">REGISTRAR</button>
+    <p>{{mensaje}}</p>
   </div>
 </section>
 <footer>

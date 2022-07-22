@@ -90,8 +90,8 @@ export interface Laboratorio {
 }
 
 export interface RegistroUsuario{
-  nombre: String;
-  apellido: String;
+  nombres: String;
+  apellidos: String;
   correo: String;
   contrasenia: String;
   num_doc_ident: String;

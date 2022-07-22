@@ -3,8 +3,8 @@ import * as states from './action';
 import {RegistroUsuario} from "./interfaces";
 
 export const initialRegistroUsuario: RegistroUsuario = {
-  nombre:'',
-  apellido: '',
+  nombres:'',
+  apellidos: '',
   contrasenia: '',
   correo: '',
   num_doc_ident:  ''
@@ -12,8 +12,8 @@ export const initialRegistroUsuario: RegistroUsuario = {
 
 const _registroUsuarioReducer = createReducer(
   initialRegistroUsuario,
-  on(states.registroUsuario,(states,{nombre,apellido,contrasenia,correo,num_doc_ident})=>(
-    {nombre: nombre, contrasenia: contrasenia, correo:correo, apellido: apellido, num_doc_ident: num_doc_ident}
+  on(states.registroUsuario,(states,{nombres,apellidos,contrasenia,correo,num_doc_ident})=>(
+    {nombres: nombres, contrasenia: contrasenia, correo:correo, apellidos: apellidos, num_doc_ident: num_doc_ident}
   ))
 );
 
