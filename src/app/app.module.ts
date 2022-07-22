@@ -12,6 +12,8 @@ import {RouterModule} from "@angular/router";
 import { RotacionComponent } from './rotacion/rotacion.component';
 import { BoletaComponent } from './boleta/boleta.component';
 import { FacturaComponent } from './factura/factura.component';
+import { StoreModule } from '@ngrx/store';
+import {registroUsuarioReducer} from "../reductor";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { FacturaComponent } from './factura/factura.component';
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({registroUsuario :registroUsuarioReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
